@@ -9,12 +9,15 @@
   position: sticky;
   top: 0;
   z-index: 3;
+  background: rgb(30, 30, 30);
 }
 
 .logo {
   object-fit: cover;
   height: 4rem;
   width: 4rem;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .desktopMenuListItem {
@@ -24,9 +27,9 @@
 }
 
 .desktopMenuListItem:hover {
-    color: gold;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+  color: gold;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
 }
 
 .desktopMenuBtn {
@@ -43,11 +46,11 @@
 }
 
 .desktopMenuBtn:hover {
-    outline-style: solid;
+  border: 2px solid gold;
 }
 
-.desktopMenuBtn:active{
-    background: gold;
+.desktopMenuBtn:active {
+  background: gold;
 }
 
 .desktopMenuImg {
@@ -58,5 +61,5 @@
 }
 
 .contactIcon {
-    margin: 0 0.5rem 0 0;
+  margin: 0 0.5rem 0 0;
 }

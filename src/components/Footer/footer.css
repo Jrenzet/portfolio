@@ -1,0 +1,16 @@
+#links {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.link {
+  margin: 1rem;
+  display: flex;
+  color: white;
+}
+
+.link:hover {
+    color: gold;
+}

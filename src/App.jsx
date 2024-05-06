@@ -1,6 +1,5 @@
 import Navbar from "./components/NavBar/navbar";
-import Intro from "./components/Intro/intro";
-import Skills from "./components/Skills/skills";
+import Footer from "./components/Footer/footer";
 import RouteConfig from "./RouteConfig";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -9,8 +8,8 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Intro />
-        <RouteConfig />
+        <RouteConfig /> 
+        <Footer/>
       </Router>
     </div>
   );

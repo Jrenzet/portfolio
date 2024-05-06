@@ -1,5 +1,5 @@
 #intro {
-  height: calc(100vh - 4rm); /*desired heght minus height of navbar*/
+  height: calc(100vh - 4rem); /*desired heght minus height of navbar*/
   width: 90vw;
   max-width: 75rem;
   margin: 0 auto;

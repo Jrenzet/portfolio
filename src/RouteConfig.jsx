@@ -3,6 +3,7 @@ import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import NotFoundPage from "./pages/NotFoundPage";
 import Home from "./pages/Home";
+import ContactMe from "./pages/ContactMe";
 
 export const RouteConfig = () => {
   return (
@@ -10,6 +11,7 @@ export const RouteConfig = () => {
       <Route path="/" element={<Home />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/experience" element={<Experience />} />
+      <Route path="/contact" element={<ContactMe />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

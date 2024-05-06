@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Timeline from "../components/TimeLine/timeline";
 
 const Experience = () => {
   return (
     <div>
-      Experience
+      <Timeline />
     </div>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
