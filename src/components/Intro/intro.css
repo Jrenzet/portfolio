@@ -64,3 +64,9 @@
 .info {
   margin: 0 0.5rem 0 0;
 }
+
+@media screen and (max-width:650px) { /* image dissapears when screen width is < 650px*/
+    .selfImage {
+        visibility: hidden;
+    }
+}
