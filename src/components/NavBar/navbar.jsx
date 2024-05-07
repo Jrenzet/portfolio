@@ -1,32 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ContactMailOutlinedIcon from "@mui/icons-material/ContactMailOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="navbar">
-      <Link to="/">
+      <NavLink to="/">
         <img src={logo} alt="Logo" className="logo" />
-      </Link>
+      </NavLink>
       <div className="desktopMenu">
-        <Link to="/" className="desktopMenuListItem">
+        <NavLink to="/" className="desktopMenuListItem">
           About
-        </Link>
-        <Link to="projects" className="desktopMenuListItem">
+        </NavLink>
+        <NavLink to="projects" className="desktopMenuListItem">
           Portfolio
-        </Link>
-        <Link to="experience" className="desktopMenuListItem">
+        </NavLink>
+        <NavLink to="experience" className="desktopMenuListItem">
           Experience
-        </Link>
+        </NavLink>
       </div>
-      <Link to="/contact">
+      <NavLink to="/contact" className="contactLink">
         <button className="desktopMenuBtn">
           <ContactMailOutlinedIcon className="contactIcon" />
           Contact Me
         </button>
-      </Link>
+      </NavLink>
+
+      <div className="mobileMenu">
+        <MenuIcon
+          className="mobileMenuIcon"
+          fontSize="large"
+          onClick={() => setShowMenu(!showMenu)}
+        />
+        <div
+          className="navMenu"
+          style={{ display: showMenu ? "flex" : "none" }}
+        >
+          <NavLink
+            to="/"
+            className="mobileMenuListItem"
+            onClick={() => setShowMenu(false)}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="projects"
+            className="mobileMenuListItem"
+            onClick={() => setShowMenu(false)}
+          >
+            Portfolio
+          </NavLink>
+          <NavLink
+            to="experience"
+            className="mobileMenuListItem"
+            onClick={() => setShowMenu(false)}
+          >
+            Experience
+          </NavLink>
+          <NavLink
+            to="contact"
+            className="mobileMenuListItem"
+            onClick={() => setShowMenu(false)}
+          >
+            Contact Me
+          </NavLink>
+        </div>
+      </div>
     </nav>
   );
 };

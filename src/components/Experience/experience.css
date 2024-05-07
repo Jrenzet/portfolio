@@ -1,0 +1,12 @@
+#experience {
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.image {
+    max-width: 60rem;  
+}

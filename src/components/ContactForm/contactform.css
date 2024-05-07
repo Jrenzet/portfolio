@@ -1,5 +1,5 @@
 #contactform {
-  min-height: calc(100vh - 4rem); /*desired heght minus height of navbar*/
+  min-height: calc(100vh - 9rem); /*desired heght minus height of navbar*/
   width: 80vw;
   overflow: hidden;
   position: relative;

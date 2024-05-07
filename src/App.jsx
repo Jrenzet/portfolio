@@ -6,11 +6,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <RouteConfig /> 
-        <Footer/>
-      </Router>
+        <Router>
+          <Navbar />
+          <RouteConfig />
+          <Footer />
+        </Router>
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react'
+import Skills from '../components/Skills/skills'
 
 export const Projects = () => {
   return (
     <div>
-      Projects
+      <Skills/>
     </div>
   )
 }

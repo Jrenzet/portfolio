@@ -1,6 +1,7 @@
 .navbar {
   height: 5rem;
-  width: 90vw;
+  width: 100vw;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -16,20 +17,26 @@
   object-fit: cover;
   height: 4rem;
   width: 4rem;
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
+  margin-right: 5rem;
 }
 
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
   color: white;
+  text-decoration: none;
 }
 
 .desktopMenuListItem:hover {
   color: gold;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid gold;
+}
+
+.desktopMenuListItem.active {
+  color: gold;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid gold;
 }
 
 .desktopMenuBtn {
@@ -37,12 +44,13 @@
   border-radius: 12rem;
   cursor: pointer;
   height: 2rem;
-  width: 9rem;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
 }
 
 .desktopMenuBtn:hover {
@@ -62,4 +70,75 @@
 
 .contactIcon {
   margin: 0 0.5rem 0 0;
+}
+
+.mobileMenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+
+.mobileMenuIcon {
+  color: white;
+}
+
+.mobileMenuIcon:hover {
+  color: gold;
+}
+
+.navMenu {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+  display: none;
+}
+
+.mobileMenuListItem {
+  margin: 0.25rem;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  color: white;
+  background: rgb(30, 30, 30);
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+}
+
+
+.mobileMenuListItem:hover {
+  color: gold;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid gold;
+}
+
+.mobileMenuListItem.active {
+  color: gold;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid gold;
+}
+
+@media screen and (max-width: 725px) {
+  .mobileMenu {
+    display: flex;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .desktopMenuBtn {
+    display: none;
+  }
+
+}
+
+.contactLink {
+  text-decoration: none;
 }
