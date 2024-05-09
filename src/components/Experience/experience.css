@@ -1,6 +1,6 @@
 #experience {
   width: 100vw;
-  max-width: 60rem;
+  max-width: 80vw;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -8,5 +8,32 @@
 }
 
 .image {
-    max-width: 60rem;  
+  max-width: 60rem;
+}
+
+.companyLogo {
+  max-width: 2rem;
+  position: absolute;
+  right: 3rem;
+}
+
+.accordion-button {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border: none;
+}
+
+.accordion-button:focus {
+  z-index: 0;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: gold;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.header {
+  margin: 1rem 0;
 }

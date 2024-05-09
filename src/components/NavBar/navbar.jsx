@@ -17,10 +17,13 @@ const Navbar = () => {
           About
         </NavLink>
         <NavLink to="projects" className="desktopMenuListItem">
-          Portfolio
+          Projects
         </NavLink>
         <NavLink to="experience" className="desktopMenuListItem">
           Experience
+        </NavLink>
+        <NavLink to="skills" className="desktopMenuListItem">
+          Skills
         </NavLink>
       </div>
       <NavLink to="/contact" className="contactLink">

@@ -1,10 +1,14 @@
 import React from 'react'
-import Skills from '../components/Skills/skills'
+import BankBuddy from '../components/Projects/bankBuddy'
+import JAM from '../components/Projects/jam'
+import Pomodoro from '../components/Projects/pomodoro'
 
 export const Projects = () => {
   return (
     <div>
-      <Skills/>
+      <BankBuddy/>
+      <JAM/>
+      <Pomodoro/>
     </div>
   )
 }

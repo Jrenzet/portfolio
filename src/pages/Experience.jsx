@@ -1,10 +1,10 @@
 import React from "react";
-import Timeline from "../components/Experience/experience";
+import ExpComponent from "../components/Experience/experience";
 
 const Experience = () => {
   return (
     <div>
-      <Timeline />
+      <ExpComponent />
     </div>
   );
 };

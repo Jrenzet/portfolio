@@ -22,6 +22,9 @@ const Intro = () => {
         </p>
         <img src={SelfImage} alt="me" className="selfImage" />
       </div>
+      <div>
+        I'm a former business student transitioning from finance to the tech sector. 
+      </div>
     </section>
   );
 };
