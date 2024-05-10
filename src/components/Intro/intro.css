@@ -1,7 +1,7 @@
 #intro {
   height: calc(100vh - 9rem); /*desired heght minus height of navbar*/
   width: 100vw;
-  max-width: 75vw;
+  max-width: 75rem;
   margin: 0 auto;
   position: relative;
   align-items: center;
@@ -45,6 +45,7 @@
 }
 
 .info {
+  max-width: 75rem;
   margin: 0 auto;
 }
 
