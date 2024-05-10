@@ -1,9 +1,8 @@
 #intro {
   height: calc(100vh - 9rem); /*desired heght minus height of navbar*/
   width: 100vw;
-  max-width: 75rem;
+  max-width: 75vw;
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
   align-items: center;
 }
@@ -45,28 +44,17 @@
   letter-spacing: 1px;
 }
 
-.btn {
-  background: white;
-  margin: 1rem 0;
-  padding: 0.75rem 1rem;
-  border: none;
-  border-radius: 12rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2rem;
-  width: 9rem;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn:active{
-    background: gold;
-}
-
 .info {
-  margin: 0 0.5rem 0 0;
+  margin: 0 auto;
+}
+
+.connect {
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.bio {
+  font-size: 15px;
 }
 
 @media screen and (max-width:650px) { /* image dissapears when screen width is < 650px*/

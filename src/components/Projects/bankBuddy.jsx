@@ -17,8 +17,10 @@ const BankBuddyText = ({ slideNum }) => {
           edit loans and financial statements, or generate a report.
           <br />
           <br />
-          Technologies Used: Java, JUnit testing framework, Java Swing libraries
-          for the UI, and JSON files for data persistance.
+          <div className="tech">
+            Technologies Used: Java, JUnit testing framework, Java Swing
+            libraries for the UI, and JSON files for data persistance.
+          </div>
         </div>
       );
     case 1:

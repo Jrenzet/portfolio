@@ -1,8 +1,6 @@
 import React from "react";
 import "./intro.css";
 import SelfImage from "../../assets/self.png";
-import { Link } from "react-scroll";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Intro = () => {
   return (
@@ -21,9 +19,21 @@ const Intro = () => {
           internship in fall 2024
         </p>
         <img src={SelfImage} alt="me" className="selfImage" />
-      </div>
-      <div>
-        I'm a former business student transitioning from finance to the tech sector. 
+        {/* <div className="info">
+        <div className="bio">
+          I'm a former finance professional in the middle of my journey into the
+          tech sector. I'm interested in backend development, object oriented
+          programming, and trying out new technologies. I have experience with:
+          <ul>
+            <li>Languages: Java, Python, JavaScript</li>
+            <li>Frameworks: React, Express.js, JUnit</li>
+            <li>Git, VS Code</li>
+          </ul>
+        </div>
+        <div className="connect">
+          Connect with me! Either via LinkedIn or email
+        </div>
+      </div> */}
       </div>
     </section>
   );

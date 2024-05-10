@@ -9,16 +9,19 @@ const ConditionalText = ({ slideNum }) => {
   switch (slideNum) {
     case 0:
       return (
-        <div>
-          JAM is a simple, intuitive tool for projecting debt and cash flow. The
-          home page is simple, with options for the user to input and edit loans
-          and financial statements, or generate a report.
+        <div className="conditionalText">
+          This is a chrome extension with a simple timer which, while running, will block certain distracting websites. Currently these websites are hardcoded and include YouTube, Twitter, Facebook, and Instagram. Timer is set for 25 minutes in line with the Pomodoro study technique.
+          <br />
+          <br />
+          <div className="tech">
+            Technologies Used: JavaScript, Chrome APIs, HTML, CSS
+          </div>
         </div>
       );
     case 1:
-      return <div>This is for slide 2</div>;
+      return <div className="conditionalText">Example of blocked site when timer is running. Not pretty but it works!</div>;
     case 2:
-      return <div>This is for slide 3</div>;
+      return <div className="conditionalText">This is for slide 3</div>;
   }
 };
 
@@ -32,7 +35,7 @@ const Skills = () => {
 
   return (
     <section id="projects">
-      <h1 className="header">Pomodoro (Hackathon)</h1>
+      <h1 className="header">Pomodoro Study Timer (Hackathon)</h1>
       <div className="borderDiv">
         <Carousel
           interval={null}
@@ -40,10 +43,10 @@ const Skills = () => {
           onSelect={stateHandler}
         >
           <Carousel.Item>
-            <img src={Interface} alt="JAM" className="slideImage" />
+            <img src={Interface} alt="Pomodoro" className="slideImage" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={Block} alt="JAM" className="slideImage" />
+            <img src={Block} alt="Pomodoro" className="slideImage" />
           </Carousel.Item>
         </Carousel>
         <ConditionalText slideNum={currentIndex}></ConditionalText>
