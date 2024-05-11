@@ -19,7 +19,7 @@ const ConditionalText = ({ slideNum }) => {
         </div>
       );
     case 1:
-      return <div className="conditionalText">Example of blocked site when timer is running. Not pretty but it works!</div>;
+      return <div className="conditionalText">Example of blocked site when timer is running.</div>;
     case 2:
       return <div className="conditionalText">This is for slide 3</div>;
   }
