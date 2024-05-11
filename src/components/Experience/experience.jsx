@@ -114,7 +114,29 @@ const Timeline = () => {
       <Accordion alwaysOpen>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
-            Supported Learning Groups (SLG) Program <img src={UofG} className="companyLogo" />
+            Game Statistician <img src={UBC} className="companyLogo" />
+          </Accordion.Header>
+          <Accordion.Body>
+            <div className="employer">
+              University of British Columbia Athletics Department
+              <br />
+            </div>
+            <div className="dates">
+              September 2023 - Present <br />
+            </div>
+            <ul>
+              <li>
+                Record live in-game statistics for varsity Basketball,
+                Volleyball, Hockey, Soccer, Softball and Baseball for the UBC
+                athletic department.
+              </li>
+            </ul>
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>
+            Supported Learning Groups (SLG) Program{" "}
+            <img src={UofG} className="companyLogo" />
           </Accordion.Header>
           <Accordion.Body>
             <div className="employer">
@@ -137,7 +159,8 @@ const Timeline = () => {
       <Accordion alwaysOpen>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
-          Bachelor of Computer Science (Second Degree Program) <img src={UBC} className="companyLogo" />
+            Bachelor of Computer Science (Second Degree Program){" "}
+            <img src={UBC} className="companyLogo" />
           </Accordion.Header>
           <Accordion.Body>
             <div className="employer">
@@ -147,15 +170,14 @@ const Timeline = () => {
               September 2023 - Present <br />
             </div>
             <ul>
-              <li>
-                89% Cumulative GPA
-              </li>
+              <li>89% Cumulative GPA</li>
             </ul>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
           <Accordion.Header>
-            Bachelor of Commerce, Food and Agricultural Business <img src={UofG} className="companyLogo" />
+            Bachelor of Commerce, Food and Agricultural Business (Co-op) {" "}
+            <img src={UofG} className="companyLogo" />
           </Accordion.Header>
           <Accordion.Body>
             <div className="employer">
@@ -165,9 +187,7 @@ const Timeline = () => {
               September 2016 - May 2021 <br />
             </div>
             <ul>
-              <li>
-                87% Cumulative GPA
-              </li>
+              <li>87% Cumulative GPA</li>
             </ul>
           </Accordion.Body>
         </Accordion.Item>
