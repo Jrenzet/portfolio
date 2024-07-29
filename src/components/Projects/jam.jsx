@@ -42,10 +42,9 @@ const ConditionalText = ({ slideNum }) => {
     case 3:
       return (
         <div className="conditionalText">
-          After rpofile creation, the user can now browse a list of all other
+          After profile creation, the user can now browse a list of all other
           members. If they are interested in connecting, the message button will
-          open outlook with a new email draft created, which has the other
-          user's email pre-populated in the "To" field.
+          open outlook with a new email draft created.
         </div>
       );
   }
