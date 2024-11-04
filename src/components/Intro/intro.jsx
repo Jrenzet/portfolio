@@ -15,8 +15,7 @@ const Intro = () => {
           <br />
         </span>
         <p className="description">
-          Currently studying computer science at UBC, searching for an
-          internship in winter 2025
+          Currently studying computer science at UBC, incoming Software Engineer co-op in January 2025
         </p>
         <img src={SelfImage} alt="me" className="selfImage" />
         {/* <div className="info">
