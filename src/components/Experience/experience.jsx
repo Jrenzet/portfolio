@@ -12,9 +12,9 @@ const Timeline = () => {
   const extraKeys = ["0", "1"];
   const educationKeys = ["0", "1"];
 
-  const [workActiveKeys, setWorkActiveKeys] = useState(workKeys);
-  const [extraActiveKeys, setExtraActiveKeys] = useState(extraKeys);
-  const [educationActiveKeys, setEducationActiveKeys] = useState(educationKeys);
+  const [workActiveKeys, setWorkActiveKeys] = useState([]);
+  const [extraActiveKeys, setExtraActiveKeys] = useState([]);
+  const [educationActiveKeys, setEducationActiveKeys] = useState([]);
 
   const expandAll = () => {
     setWorkActiveKeys(workKeys);

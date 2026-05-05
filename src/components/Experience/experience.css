@@ -34,7 +34,7 @@
 .experienceAccordionHeading {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) 1.5rem;
   align-items: center;
   gap: 0.7rem;
   min-width: 0;
@@ -45,11 +45,9 @@
 }
 
 .companyLogo {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
   object-fit: contain;
-  justify-self: end;
-  flex-shrink: 0;
 }
 
 .accordion-button {
@@ -61,6 +59,10 @@
   color: var(--text);
   background: rgba(40, 58, 87, 0.88);
   font-weight: 600;
+}
+
+.accordion-button::after {
+  filter: invert(75%) grayscale(100%);
 }
 
 .accordion-button:focus {
