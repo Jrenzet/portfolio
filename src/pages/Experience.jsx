@@ -3,9 +3,13 @@ import ExpComponent from "../components/Experience/experience";
 
 const Experience = () => {
   return (
-    <div>
+    <section>
+      <h1 className="section-heading">Experience</h1>
+      <p className="section-subheading">
+        Professional roles, campus involvement, and education.
+      </p>
       <ExpComponent />
-    </div>
+    </section>
   );
 };
 

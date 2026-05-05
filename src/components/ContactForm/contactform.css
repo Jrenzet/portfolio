@@ -1,68 +1,79 @@
 #contactform {
-  min-height: calc(100vh - 9rem); /*desired heght minus height of navbar*/
-  width: 80vw;
-  overflow: hidden;
-  position: relative;
-  max-width: 60rem;
+  min-height: calc(100vh - 13rem);
+  width: 100%;
+  max-width: 48rem;
   margin: 0 auto;
-  text-align: center;
-  align-items: center;
+  text-align: left;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  padding: clamp(1rem, 3vw, 2rem);
 }
 
 .contactPageTitle {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: gold;
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.03em;
 }
 
 .contactDesc {
   font-size: 1rem;
-  padding: 1rem;
-  font-weight: 300;
+  color: var(--muted);
 }
 
 .contactForm {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80vw;
-  max-width: 60rem;
+  width: 100%;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
 }
 
 .name,
 .email,
 .msg {
-  font-size: medium;
+  font-size: 0.98rem;
   width: 100%;
-  max-width: 40rem;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  background: rgb(40, 40, 40);
+  padding: 0.85rem 0.95rem;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(9, 15, 31, 0.75);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.name:focus,
+.email:focus,
+.msg:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.16);
 }
 
 .submitBtn {
-  background: white;
-  width: 15rem;
+  margin-top: 0.4rem;
+  margin-inline: auto;
+  align-self: center;
+  background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+  color: #04162c;
+  width: fit-content;
   border: none;
-  border-radius: 0.5rem;
-  padding: 0.75rem;
-  margin: 1rem;
+  border-radius: 999px;
+  padding: 0.75rem 1.2rem;
   cursor: pointer;
-  border: 2px solid transparent;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .submitBtn:hover {
-  border: 2px solid gold;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.35);
 }
 
 .submitBtn:active {
-  background: gold;
+  transform: translateY(0);
 }

@@ -1,44 +1,66 @@
 import "./contactform.css";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const form = useRef();
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_3vnofop', 'template_q2y862j', form.current, {
-        publicKey: 'KuRuG9lPA1vQsrpbv',
-      })
+    if (!serviceId || !templateId || !publicKey) {
+      console.log("Missing EmailJS environment variables.");
+      alert("Email service error");
+      return;
+    }
+
+    emailjs.sendForm(serviceId, templateId, form.current, { publicKey })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
           e.target.reset();
-          alert('Email Sent Successfully. I\'ll be in touch, thank you!');
+          alert("Email Sent Successfully. I'll be in touch, thank you!");
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.log("FAILED...", error.text);
         },
       );
   };
 
   return (
     <section id="contactform">
-      <h1 className="contactPageTitle">Contact Me</h1>
+      <h1 className="contactPageTitle">Let&apos;s Connect!</h1>
       <span className="contactDesc">
-        Fill out the form below to send me an email!
+        If you&apos;d like to collaborate, ask a question, or chat about an
+        opportunity, send me a message below.
       </span>
       <form className="contactForm" ref={form} onSubmit={sendEmail}>
-        <input type="text" className="name" placeholder="Your Name" name="from_name"/>
-        <input type="email" className="email" placeholder="Your Email" name="from_email"/>
+        <input
+          type="text"
+          className="name"
+          placeholder="Your Name"
+          name="from_name"
+          required
+        />
+        <input
+          type="email"
+          className="email"
+          placeholder="Your Email"
+          name="from_email"
+          required
+        />
         <textarea
           className="msg"
           name="message"
           rows="5"
-          placeholder="Your Message Here"
+          placeholder="Tell me a little about what you'd like to discuss..."
+          required
         />
         <button className="submitBtn" value="Send" type="submit">
-          Submit
+          Send Message
         </button>
       </form>
     </section>

@@ -6,11 +6,15 @@ import { BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-        <Router>
+      <Router>
+        <div className="app-shell">
           <Navbar />
-          <RouteConfig />
+          <main className="page-content">
+            <RouteConfig />
+          </main>
           <Footer />
-        </Router>
+        </div>
+      </Router>
     </div>
   );
 }

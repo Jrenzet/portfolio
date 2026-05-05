@@ -1,127 +1,134 @@
 .navbar {
-  height: 5rem;
-  width: 100vw;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.85rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  top: 0;
-  z-index: 3;
-  background: rgb(30, 30, 30);
+  top: 1rem;
+  z-index: 40;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  background: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 16px 36px rgba(3, 8, 20, 0.28);
 }
 
 .logo {
-  object-fit: cover;
-  height: 4rem;
-  width: 4rem;
-  margin-right: 5rem;
+  height: 2.15rem;
+  width: 2.15rem;
+  border-radius: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .desktopMenuListItem {
-  margin: 1rem;
+  margin: 0 0.85rem;
   cursor: pointer;
-  color: white;
-  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.35rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .desktopMenuListItem:hover {
-  color: gold;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid gold;
+  color: var(--text);
+  border-bottom-color: var(--accent);
 }
 
 .desktopMenuListItem.active {
-  color: gold;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid gold;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .desktopMenuBtn {
-  background: white;
-  border-radius: 12rem;
+  background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+  color: #04162c;
+  border-radius: 999px;
   cursor: pointer;
-  height: 2rem;
+  height: 2.35rem;
+  font-weight: 700;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-  border: 2px solid transparent;
-  text-decoration: none;
+  padding: 0 1.1rem;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .desktopMenuBtn:hover {
-  border: 2px solid gold;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.35);
 }
 
 .desktopMenuBtn:active {
-  background: gold;
-}
-
-.desktopMenuImg {
-  object-fit: cover;
-  height: 1rem;
-  width: 1rem;
-  margin: 1rem;
+  transform: translateY(0);
 }
 
 .contactIcon {
-  margin: 0 0.5rem 0 0;
+  margin: 0 0.4rem 0 0;
 }
 
 .mobileMenu {
   display: none;
-  object-fit: cover;
-  height: 1.8rem;
 }
 
 .mobileMenuIcon {
-  color: white;
+  color: var(--text);
+  cursor: pointer;
 }
 
 .mobileMenuIcon:hover {
-  color: gold;
+  color: var(--accent);
 }
 
 .navMenu {
   position: absolute;
-  top: 5rem;
-  right: 2rem;
-  z-index: 2;
+  top: 4.35rem;
+  right: 0;
+  z-index: 20;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  gap: 0.25rem;
+  padding: 0.75rem;
   height: fit-content;
-  min-width: 15rem;
-  background: rgb(40, 40, 40);
-  border-radius: 1rem;
+  min-width: 12rem;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid var(--line);
+  border-radius: 12px;
   display: none;
+  box-shadow: 0 20px 28px rgba(2, 8, 21, 0.38);
 }
 
 .mobileMenuListItem {
-  margin: 0.25rem;
-  padding: 0.5rem 3rem;
+  margin: 0;
+  padding: 0.55rem 0.75rem;
   cursor: pointer;
-  color: white;
-  background: rgb(30, 30, 30);
-  border-bottom: 3px solid transparent;
-  text-decoration: none;
+  color: var(--muted);
+  border-radius: 8px;
+  border: 1px solid transparent;
 }
 
-
 .mobileMenuListItem:hover {
-  color: gold;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid gold;
+  color: var(--text);
+  border-color: var(--line);
+  background: rgba(125, 211, 252, 0.08);
 }
 
 .mobileMenuListItem.active {
-  color: gold;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid gold;
+  color: var(--accent);
+  background: rgba(125, 211, 252, 0.12);
+  border-color: var(--line);
 }
 
 @media screen and (max-width: 725px) {
@@ -137,8 +144,11 @@
     display: none;
   }
 
+  .brand span {
+    display: none;
+  }
 }
 
 .contactLink {
-  text-decoration: none;
+  display: flex;
 }
