@@ -1,4 +1,3 @@
-import React from "react";
 import "./intro.css";
 import SelfImage from "../../assets/self.png";
 import { NavLink } from "react-router-dom";

@@ -22,7 +22,7 @@ const ContactForm = () => {
         () => {
           console.log("SUCCESS!");
           e.target.reset();
-          alert("Email Sent Successfully. I'll be in touch, thank you!");
+          alert("Email sent successfully. I'll be in touch, thank you!");
         },
         (error) => {
           console.log("FAILED...", error.text);
